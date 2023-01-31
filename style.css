@@ -40,7 +40,33 @@ header nav ul li {
 }
 
 /*Book Appointment*/
+.book {
+  flex-direction: column;
+}
 .book form {
   display: flex;
   flex-direction: column;
+  width: 25vw;
+}
+.book input,
+.book select {
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  background-color: aliceblue;
+}
+
+.book label,
+.book h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.book form button {
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgb(55, 84, 138);
+  color: #fff;
+  font-size: 22px;
 }
