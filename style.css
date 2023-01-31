@@ -3,3 +3,44 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: crimson;
+}
+li {
+  list-style: none;
+}
+/*Common CSS*/
+header {
+  height: 80px;
+  background-color: rgb(53, 53, 173);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  font-size: 22px;
+  margin-left: 20px;
+}
+.main-container {
+  height: calc(100vh - 80px);
+  background-color: rgb(134, 192, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Book Appointment*/
+.book form {
+  display: flex;
+  flex-direction: column;
+}

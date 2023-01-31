@@ -19,12 +19,40 @@
                 <li><a href="index.html">Book Appointment</a></li>
                 <li><a href="consult.html">Consultation</a></li>
                 <li><a href="buymedicines.html">Buy Medicines</a></li>
-                <l1><a href="findhospital">Find Hospital</a></l1>
-                <l1><a href="doctorslist.html">Doctors List</a></l1>
-                <l1><a href="contact.html">Contact Us</a></l1>
+                <li><a href="findhospital">Find Hospital</a></li>
+                <li><a href="doctorslist.html">Doctors List</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+    <section class="main-container book">
+        <form action="">
+            <!-- patientname -->
+            <label for="pname">Patient Name</label>
+            <input type="text" name="pname" id="pname">
+            <!--Mobile-->
+            <label for="mobile">Mobile</label>
+            <input type="tel" name="mobile" id="mobile">
+            <!--Gender-->
+            <span class="gender">
+                <h3>Gender</h3>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" value="female" id="female">
+            </span>
+            <!--Procedure-->
+            <label for="tests">Select the Test</label>
+            <select id="tests" name="tests">
+                <option value="crp">CRP</option>
+                <option value="lft">LFT</option>
+                <option value="cbc">CBC</option>
+            </select>
+            <!--Date-->
+            <label for="bdate">Date</label>
+            <input type="date" name="bdate" id="bdate">
+        </form>
+    </section>
 
     <script src="script.js"></script>
 </body>
