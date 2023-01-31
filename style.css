@@ -70,3 +70,14 @@ header nav ul li {
   color: #fff;
   font-size: 22px;
 }
+
+/*Buy Medicines*/
+.medicines input {
+  width: 55px;
+}
+.medicines table td {
+  padding: 5px 20px;
+}
+.medicines table td img {
+  height: 50px;
+}
