@@ -41,6 +41,7 @@ fetch("datas/hospitals.json")
   .then((datas) => datas.json())
   .then((data) => {
     const pincode_select = document.getElementById("pincodes");
+    const hosptable = document.getElementById("hosptable");
     const pincodes_d = [];
 
     data.filter((e) => {
@@ -54,4 +55,19 @@ fetch("datas/hospitals.json")
     });
 
     //display hospital list based on change in value of the select box
+    //addEventListener
+    pincode_select.addEventListener("change", () => {
+      const selectedPin = pincode_select.value;
+      data.filter((e) => {
+        if (parseInt(selectedPin) === e.pincode) {
+          hosptable.innerHTML += `
+            <tr>
+                <td>${e.name}</td>
+                <td>${e.address}</td>
+                <td>${e.pincode}</td>
+            </tr>
+            `;
+        }
+      });
+    });
   });

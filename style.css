@@ -99,7 +99,18 @@ header nav ul li {
 }
 
 /*Find Hospital*/
+.findhospital {
+  justify-content: flex-start;
+}
 .findhospital select {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.findhospital td {
+  text-align: center;
+  padding: 10px 20px;
+}
+.findhospital table {
+  width: 400px;
 }
