@@ -58,6 +58,7 @@ fetch("datas/hospitals.json")
     //addEventListener
     pincode_select.addEventListener("change", () => {
       const selectedPin = pincode_select.value;
+      hosptable.innerHTML = "";
       data.filter((e) => {
         if (parseInt(selectedPin) === e.pincode) {
           hosptable.innerHTML += `
