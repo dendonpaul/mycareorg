@@ -1,0 +1,50 @@
+[
+  {
+    "doc_name": "Doctor 1",
+    "doc_dept": "ENT",
+    "doc_fees": 100,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Denny",
+    "doc_dept": "ENT",
+    "doc_fees": 150,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 3",
+    "doc_dept": "Gastroentrology",
+    "doc_fees": 200,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 4",
+    "doc_dept": "Gastroentrology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 5",
+    "doc_dept": "Neurology",
+    "doc_fees": 200,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 6",
+    "doc_dept": "Neurology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 7",
+    "doc_dept": "Orthopaedic",
+    "doc_fees": 200,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "Doctor 8",
+    "doc_dept": "Orthopaedic",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  }
+]

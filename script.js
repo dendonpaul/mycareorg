@@ -80,7 +80,7 @@ fetch("datas/hospitals.json")
       });
     });
 
-    //Search Box functionality
+    //Search Box functionality Pincode list
     const searchBox = document.getElementById("searchtext");
 
     searchBox.addEventListener("keyup", () => {
@@ -136,3 +136,73 @@ for (let i = 0; i < searchselector.length; i++) {
 }
 
 //Doctors List
+fetch("datas/doctors.json")
+  .then((datas) => datas.json())
+  .then((data) => {
+    const deptlist_select = document.getElementById("deptlist");
+    const doctable = document.getElementById("doctable");
+    const deptlist_d = [];
+
+    data.filter((e) => {
+      deptlist_d.push(e.doc_dept);
+    });
+    const deptlist = new Set(deptlist_d);
+    deptlist.forEach((e) => {
+      deptlist_select.innerHTML += `
+              <option value="${e}">${e}</option>
+          `;
+    });
+
+    //display doctors list based on change in value of the select box
+    //addEventListener
+    deptlist_select.addEventListener("change", () => {
+      const selectedDept = deptlist_select.value;
+      doctable.innerHTML = "";
+      data.filter((e) => {
+        if (selectedDept === e.doc_dept) {
+          doctable.innerHTML += `
+                <tr>
+                    <td>${e.doc_name}</td>
+                    <td>${e.doc_dept}</td>
+                    <td>${e.doc_fees}</td>
+                    <td>${e.availability}</td>
+                </tr>
+                `;
+        } else if (selectedDept === "all") {
+          doctable.innerHTML += `
+                <tr>
+                    <td>${e.doc_name}</td>
+                    <td>${e.doc_dept}</td>
+                    <td>${e.doc_fees}</td>
+                    <td>${e.availability}</td>
+                </tr>
+                `;
+        }
+      });
+    });
+
+    //Search Box functionality Doctor list
+    const searchDoc = document.getElementById("searchdoc");
+
+    searchDoc.addEventListener("keyup", () => {
+      doctable.innerHTML = "";
+      data.filter((e) => {
+        //Start
+        if (
+          searchDoc.value !== "" &&
+          e.doc_name.toLowerCase().search(searchDoc.value.toLowerCase()) !== -1
+        ) {
+          console.log("hello");
+          doctable.innerHTML += `
+                <tr>
+                    <td>${e.doc_name}</td>
+                    <td>${e.doc_dept}</td>
+                    <td>${e.doc_fees}</td>
+                    <td>${e.availability}</td>
+                </tr>
+                `;
+        }
+        //End
+      });
+    });
+  });
