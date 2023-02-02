@@ -79,7 +79,27 @@ fetch("datas/hospitals.json")
         }
       });
     });
+
+    //Search Box functionality
+    const searchBox = document.getElementById("");
   });
 
 /*Find hospital search type selector
  */
+const searchselector = document.getElementsByName("select-type");
+let prev = null;
+for (let i = 0; i < searchselector.length; i++) {
+  searchselector[i].onclick = function () {
+    prev ? prev.value : null;
+    if (this !== prev) {
+      prev = this;
+    }
+    if (this.value === "dropdwn") {
+      document.getElementById("pincodes").style.display = "block";
+      document.getElementById("searchtext").style.display = "none";
+    } else if (this.value === "searchtxt") {
+      document.getElementById("pincodes").style.display = "none";
+      document.getElementById("searchtext").style.display = "block";
+    }
+  };
+}

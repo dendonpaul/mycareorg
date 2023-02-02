@@ -111,7 +111,8 @@ footer {
 .findhospital {
   justify-content: flex-start;
 }
-.findhospital select {
+.findhospital select,
+.findhospital input[type="text"] {
   width: 100%;
   margin-bottom: 50px;
 }
