@@ -81,7 +81,38 @@ fetch("datas/hospitals.json")
     });
 
     //Search Box functionality
-    const searchBox = document.getElementById("");
+    const searchBox = document.getElementById("searchtext");
+
+    searchBox.addEventListener("keyup", () => {
+      const searchBoxValue = parseInt(searchBox.value);
+      hosptable.innerHTML = "";
+      data.filter((e) => {
+        // if (searchBoxValue === e.pincode) {
+        //   hosptable.innerHTML += `
+        //     <tr>
+        //         <td>${e.name}</td>
+        //         <td>${e.address}</td>
+        //         <td>${e.pincode}</td>
+        //     </tr>
+        //     `;
+        // }
+
+        //Start
+        if (
+          searchBox.value !== "" &&
+          e.pincode.toString().search(searchBox.value) !== -1
+        ) {
+          hosptable.innerHTML += `
+                <tr>
+                    <td>${e.name}</td>
+                    <td>${e.address}</td>
+                    <td>${e.pincode}</td>
+                </tr>
+                `;
+        }
+        //End
+      });
+    });
   });
 
 /*Find hospital search type selector
@@ -103,3 +134,5 @@ for (let i = 0; i < searchselector.length; i++) {
     }
   };
 }
+
+//Doctors List
