@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>MyCareOrg</h1>
+            <h1>MyCarOrg</h1>
         </div>
         <nav>
             <ul>
@@ -25,21 +25,25 @@
             </ul>
         </nav>
     </header>
-    <section class="main-container book medicines">
-        <h2>Buy Medicines</h2>
+    <section class="main-container book findhospital">
+        <h2>Find Hospitals</h2>
         <div class="cart-parent-container">
             <div class="cart-box">
+                <select id="pincodes" name="pincodes">
+                    <option>Select Pincode</option>
+                    <option value="all">All Hospitals</option>
+                </select>
                 <table>
                     <thead>
                         <tr>
-                            <th>Image</th>
+                            <th>Hospital Name</th>
                             <th>Medicine Name</th>
                             <th>Price</th>
                             <th>Qty</th>
                             <th>Total</th>
                         </tr>
                     </thead>
-                    <tbody id="medtable">
+                    <tbody id="hosptable">
 
                     </tbody>
                 </table>

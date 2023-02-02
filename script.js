@@ -2,7 +2,8 @@
 const fetchMedicine = fetch("datas/medicines.json").then((response) =>
   response.json().then((datas) => {
     return datas.forEach((data) => {
-      document.getElementById("table").innerHTML += `
+      document.getElementById("medtable").innerHTML += `
+     
     <tr>
       <td><img src="${data.image}" /></td>
       <td>
@@ -24,10 +25,33 @@ const fetchMedicine = fetch("datas/medicines.json").then((response) =>
             <h3 id="total-value">${data.price}</h3>
         </div>
     </td>
+    <td>
+        <div class="add-to-cart">
+            <button >Add to Cart</button>
+        </div>
+    </td>
     </tr>
     `;
     });
   })
 );
 
-// document.getElementsByTagName('table').innerHTML =
+/*Find Hospitals*/
+fetch("datas/hospitals.json")
+  .then((datas) => datas.json())
+  .then((data) => {
+    const pincode_select = document.getElementById("pincodes");
+    const pincodes_d = [];
+
+    data.filter((e) => {
+      pincodes_d.push(e.pincode);
+    });
+    const pincodes = new Set(pincodes_d);
+    pincodes.forEach((e) => {
+      pincode_select.innerHTML += `
+            <option value="${e}">${e}</option>
+        `;
+    });
+
+    //display hospital list based on change in value of the select box
+  });

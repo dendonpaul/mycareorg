@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Hospital 1",
+    "address": "Hospital 1 Address",
+    "pincode": 682311
+  },
+  {
+    "name": "Hospital 2",
+    "address": "Hospital 2 Address",
+    "pincode": 682311
+  },
+  {
+    "name": "Hospital 3",
+    "address": "Hospital 3 Address",
+    "pincode": 682311
+  },
+  {
+    "name": "Hospital 4",
+    "address": "Hospital 4 Address",
+    "pincode": 682312
+  },
+  {
+    "name": "Hospital 5",
+    "address": "Hospital 5 Address",
+    "pincode": 682312
+  },
+  {
+    "name": "Hospital 6",
+    "address": "Hospital 6 Address",
+    "pincode": 682312
+  },
+  {
+    "name": "Hospital 7",
+    "address": "Hospital 7 Address",
+    "pincode": 682313
+  },
+  {
+    "name": "Hospital 8",
+    "address": "Hospital 8 Address",
+    "pincode": 682313
+  },
+  {
+    "name": "Hospital 9",
+    "address": "Hospital 9 Address",
+    "pincode": 682313
+  }
+]
