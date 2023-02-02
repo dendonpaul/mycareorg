@@ -68,7 +68,18 @@ fetch("datas/hospitals.json")
                 <td>${e.pincode}</td>
             </tr>
             `;
+        } else if (selectedPin === "all") {
+          hosptable.innerHTML += `
+            <tr>
+                <td>${e.name}</td>
+                <td>${e.address}</td>
+                <td>${e.pincode}</td>
+            </tr>
+            `;
         }
       });
     });
   });
+
+/*Find hospital search type selector
+ */

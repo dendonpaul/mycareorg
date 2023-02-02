@@ -51,12 +51,13 @@ header nav ul li {
   margin-left: 20px;
 }
 .main-container {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   background-color: rgb(134, 192, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   row-gap: 50px;
+  padding-bottom: 50px;
 }
 
 /*Book Appointment*/
@@ -83,6 +84,14 @@ header nav ul li {
   font-weight: 300;
 }
 
+/*Footer*/
+footer {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Buy Medicines*/
 .medicines input {
   width: 55px;
@@ -106,11 +115,28 @@ header nav ul li {
   width: 100%;
   margin-bottom: 50px;
 }
-
+.findhospital table {
+  width: 450px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 22px;
+}
 .findhospital td {
   text-align: center;
   padding: 10px 20px;
+  width: 50px;
+  font-size: 20px;
 }
+.findhospital tr:nth-child(even) {
+  background-color: rgb(119, 119, 119);
+}
+.findhospital td,
+.findhospital th,
 .findhospital table {
-  width: 400px;
+  border: 2px solid black;
+}
+.findhospital .search-selector {
+  display: flex;
+  margin: 10px 0;
+  gap: 20px;
 }
