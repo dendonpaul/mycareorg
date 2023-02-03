@@ -32,6 +32,9 @@ button:hover {
   background-color: transparent;
   border: 3px solid rgb(236, 114, 157);
 }
+.error {
+  color: red;
+}
 /*header*/
 
 header {
@@ -122,11 +125,16 @@ footer {
   border-collapse: collapse;
   font-size: 22px;
 }
-.findhospital td {
+.findhospital td,
+.findhospital th {
   text-align: center;
-  padding: 10px 20px;
-  width: 50px;
+  padding: 2px 20px;
+  min-width: 250px;
   font-size: 20px;
+  white-space: wrap;
+}
+.findhospital td:last-child {
+  white-space: normal;
 }
 .findhospital tr:nth-child(even) {
   background-color: rgb(119, 119, 119);
@@ -141,3 +149,5 @@ footer {
   margin: 10px 0;
   gap: 20px;
 }
+
+/*doctors list*/

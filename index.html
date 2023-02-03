@@ -31,16 +31,19 @@
             <!-- patientname -->
             <label for="pname">Patient Name</label>
             <input type="text" name="pname" id="pname">
+            <p class="error"></p>
             <!--Mobile-->
             <label for="mobile">Mobile</label>
             <input type="tel" name="mobile" id="mobile">
+            <p class="error"></p>
             <!--Gender-->
             <span class="gender">
                 <h3>Gender</h3>
                 <label for="gender">Male</label>
-                <input type="radio" name="gender" value="male" id="male">
+                <input type="radio" name="gender" value="male" id="male" checked>
                 <label for="gender">Female</label>
                 <input type="radio" name="gender" value="female" id="female">
+                <p class="error"></p>
             </span>
             <!--Procedure-->
             <label for="tests">Test</label>
@@ -50,11 +53,14 @@
                 <option value="lft">LFT</option>
                 <option value="cbc">CBC</option>
             </select>
+            <p class="error"></p>
             <!--Date-->
             <label for="bdate">Date</label>
             <input type="date" name="bdate" id="bdate">
+            <p class="error"></p>
             <!--Submit button-->
-            <button>Book</button>
+            <button id="subBtn">Book</button>
+            <p id="successmessage"></p>
         </form>
     </section>
 

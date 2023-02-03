@@ -128,9 +128,11 @@ for (let i = 0; i < searchselector.length; i++) {
     if (this.value === "dropdwn") {
       document.getElementById("pincodes").style.display = "block";
       document.getElementById("searchtext").style.display = "none";
+      document.getElementById("searchtext").value = "";
     } else if (this.value === "searchtxt") {
       document.getElementById("pincodes").style.display = "none";
       document.getElementById("searchtext").style.display = "block";
+      document.getElementById("pincodes").value = "";
     }
   };
 }
@@ -206,3 +208,42 @@ fetch("datas/doctors.json")
       });
     });
   });
+
+//Form validation for all the pages
+const allinputs = Array.from(document.getElementsByTagName("input"));
+const submitButton = document.getElementById("subBtn");
+const getErrorTag = Array.from(document.getElementsByClassName("error"));
+let getSuccessId = document.getElementById("successmessage");
+const allSelects = Array.from(document.getElementsByTagName("select"));
+// const allRadios = Array.from(document.getElementsByTagName("radio"));
+const allFormFields = [allinputs, allSelects];
+let errors = [];
+
+if (allinputs) {
+  submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    errors = [];
+    getSuccessId.textContent = "";
+    //Make the error class empty
+    getErrorTag.forEach((error) => {
+      error.textContent = "";
+    });
+    //add error message to each error class
+    allFormFields.forEach((field) => {
+      field.forEach((el) => {
+        console.log(el.value);
+        if (el.value == "") {
+          console.log(el.nextSibling);
+          el.nextElementSibling.textContent = "Fill the field";
+          errors.push("error");
+        }
+      });
+
+      //show success if error variable is empty
+      console.log(errors.length);
+      if (errors.length == 0) {
+        getSuccessId.textContent = "Success. All Fields Validated";
+      }
+    });
+  });
+}
