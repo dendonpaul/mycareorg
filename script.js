@@ -236,6 +236,12 @@ if (allinputs) {
           el.nextElementSibling.textContent = "Fill the field";
           errors.push("error");
         }
+        if (el.type == "tel") {
+          if (isNaN(el.value)) {
+            errors.push("error");
+            el.nextElementSibling.textContent = "Enter only numbers";
+          }
+        }
       });
     });
     //show success if error variable is empty
