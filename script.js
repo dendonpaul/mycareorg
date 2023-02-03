@@ -215,8 +215,9 @@ const submitButton = document.getElementById("subBtn");
 const getErrorTag = Array.from(document.getElementsByClassName("error"));
 let getSuccessId = document.getElementById("successmessage");
 const allSelects = Array.from(document.getElementsByTagName("select"));
+const allTextAres = Array.from(document.getElementsByTagName("textarea"));
 // const allRadios = Array.from(document.getElementsByTagName("radio"));
-const allFormFields = [allinputs, allSelects];
+const allFormFields = [allinputs, allSelects, allTextAres];
 let errors = [];
 
 if (allinputs) {
@@ -231,19 +232,17 @@ if (allinputs) {
     //add error message to each error class
     allFormFields.forEach((field) => {
       field.forEach((el) => {
-        console.log(el.value);
         if (el.value == "") {
-          console.log(el.nextSibling);
           el.nextElementSibling.textContent = "Fill the field";
           errors.push("error");
         }
       });
-
-      //show success if error variable is empty
-      console.log(errors.length);
-      if (errors.length == 0) {
-        getSuccessId.textContent = "Success. All Fields Validated";
-      }
     });
+    //show success if error variable is empty
+    if (errors.length == 0) {
+      console.log(errors);
+      console.log(errors.length);
+      getSuccessId.textContent = "Success. All Fields Validated";
+    }
   });
 }
