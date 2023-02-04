@@ -129,12 +129,16 @@ footer {
 .findhospital th {
   text-align: center;
   padding: 2px 20px;
-  min-width: 250px;
+  min-width: 200px;
   font-size: 20px;
   white-space: wrap;
 }
+.findhospital td:first-child {
+  min-width: 250px;
+}
 .findhospital td:last-child {
   white-space: normal;
+  min-width: 250px;
 }
 .findhospital tr:nth-child(even) {
   background-color: rgb(119, 119, 119);

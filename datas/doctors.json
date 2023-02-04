@@ -1,6 +1,6 @@
 [
   {
-    "doc_name": "Doctor 1",
+    "doc_name": " Pratik Siva ",
     "doc_dept": "ENT",
     "doc_fees": 100,
     "availability": "Mon-fri 10:00AM-6:00PM"
@@ -12,38 +12,80 @@
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 3",
+    "doc_name": " Shankar Nand ",
     "doc_dept": "Gastroentrology",
     "doc_fees": 200,
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 4",
+    "doc_name": " Ravinder Jagjit ",
     "doc_dept": "Gastroentrology",
     "doc_fees": 250,
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 5",
+    "doc_name": " Vijaya Zubin ",
     "doc_dept": "Neurology",
     "doc_fees": 200,
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 6",
+    "doc_name": " Garen Swarna ",
     "doc_dept": "Neurology",
     "doc_fees": 250,
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 7",
+    "doc_name": " Ramana Dip ",
     "doc_dept": "Orthopaedic",
     "doc_fees": 200,
     "availability": "Mon-fri 10:00AM-6:00PM"
   },
   {
-    "doc_name": "Doctor 8",
-    "doc_dept": "Orthopaedic",
+    "doc_name": " Sanjiv Shahrukh ",
+    "doc_dept": "Cardiology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Manjeet Manpreet  ",
+    "doc_dept": "Cardiology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Aurobindo Geevarghese  ",
+    "doc_dept": "Cardiology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": " Sanjiv Shahrukh ",
+    "doc_dept": "General Surgery",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Vasant Padma  ",
+    "doc_dept": "General Surgery",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Aniket Chandrasekhar  ",
+    "doc_dept": "Oncology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Uttar Balwinder  ",
+    "doc_dept": "Oncology",
+    "doc_fees": 250,
+    "availability": "Mon-fri 10:00AM-6:00PM"
+  },
+  {
+    "doc_name": "  Amardeep Saral  ",
+    "doc_dept": "Nephrology",
     "doc_fees": 250,
     "availability": "Mon-fri 10:00AM-6:00PM"
   }
