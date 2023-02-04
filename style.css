@@ -122,8 +122,10 @@ footer {
 .findhospital table {
   width: 450px;
   border: 2px solid black;
-  border-collapse: collapse;
   font-size: 22px;
+}
+table {
+  border-collapse: collapse;
 }
 .findhospital td,
 .findhospital th {
@@ -140,8 +142,8 @@ footer {
   white-space: normal;
   min-width: 250px;
 }
-.findhospital tr:nth-child(even) {
-  background-color: rgb(119, 119, 119);
+.findhospital tbody tr:nth-child(odd) {
+  background-color: rgb(151, 157, 223);
 }
 .findhospital td,
 .findhospital th,

@@ -1,3 +1,28 @@
+//Insert header and footer dynamically
+//header
+const header = document.getElementById("header");
+header.innerHTML = `
+<div class="logo">
+<h1>MyCareOrg</h1>
+</div>
+<nav>
+<ul>
+    <li><a href="index.html">Book Appointment</a></li>
+    <li><a href="consult.html">Consultation</a></li>
+    <li><a href="buymedicines.html">Buy Medicines</a></li>
+    <li><a href="findhospital.html">Find Hospital</a></li>
+    <li><a href="doctorslist.html">Doctors List</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+`;
+
+//footer
+const footer = document.getElementById("footer");
+footer.innerHTML = `
+<p>Copyright &copy; Denny Paul</p>
+`;
+
 //Fetch medicines
 const fetchMedicine = fetch("datas/medicines.json").then((response) =>
   response.json().then((datas) => {
