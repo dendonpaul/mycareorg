@@ -43,7 +43,7 @@ const fetchMedicine = fetch("datas/medicines.json").then((response) =>
           </div>
       </td>
     <td>
-        <input type="number" min="1" max="10" value="1" id="qty" />
+        <input type="number" min="1" max="10" value="1" id="qty"/>
     </td>
     <td>
         <div class="cart-price">
@@ -58,6 +58,12 @@ const fetchMedicine = fetch("datas/medicines.json").then((response) =>
     </tr>
     `;
     });
+
+    //caclTotal function
+    const calcTotal = (e) => {
+      let totalValue = e.value * e.parentNode.price.innerHTML;
+      console.log(totalValue);
+    };
   })
 );
 
